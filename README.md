@@ -35,10 +35,10 @@ timestamp,value
 - 패턴 인식: 충분한 데이터로 온도 변화 패턴 파악 가능
 - 운영 효율성: 너무 크지도 작지도 않은 최적 크기
 
-## 라벨 생성 메커니즘
+## 2-1) 라벨 생성 메커니즘
 - 각 Window 100 배치에 대해 다음과 같은 다차원 분석을 수행했습니다:
 
-## 온도 범주 분류
+## 2-2) 온도 범주 분류
 ```python
 
 if mean_temp < 40:     
@@ -50,3 +50,43 @@ elif mean_temp < 85:
 else:
   temp_category = "과열"     # 즉시 점검 필요
 ```
+
+## 2-3) 안정성 평가
+```python
+if std_temp < 2:     
+	stability = "안정"          # 일정한 운영 상태 
+elif std_temp < 5:     
+	stability = "보통"          # 보통 수준의 변동 
+else: 
+    	stability = "불안정"        # 운영 문제 가능성
+```
+
+## 2-4) 변동 패턴 분석
+```python
+if temp_range < 5:     
+	range_category = "일정"     # 매우 안정적 
+elif temp_range < 15:     
+	range_category = "변동"     # 정상적인 변동 
+else:     
+	range_category = "급변"     # 급격한 변화 발생
+```
+
+## 2-4) 최종 라벨: 의미 있는 조합
+- 이 세 가지 차원을 조합하여 "정상_안정_일정", "고온_불안정_급변" 같은 직관적이고 실용적인 라벨을 생성했습니다.
+```json
+{
+	"batch_id": 1,   
+	"value_label": "정상_안정_일정",   
+	"trend": "평형",   
+	"stability": "안정",   
+	"alert_level": "정상",   
+	"statistics": 
+	{     
+		"mean": 55.2,     
+		"std": 2.1,     
+		"min": 51.2,     
+		"max": 59.8   
+	} 
+}
+```
+ 
