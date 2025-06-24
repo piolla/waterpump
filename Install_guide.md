@@ -50,6 +50,7 @@ source water_pump_env/bin/activate
 ## 4단계: 패키지 설치
 ```bash
 pip install -r requirements.txt
+```
 
 ## 5단계: 시스템 환경 점검
 ```bash
