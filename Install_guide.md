@@ -1,7 +1,9 @@
 # LLM 기반 워터펌프 AI 챗봇 설치 가이드  
 🗂️ 프로젝트 폴더 구조
 water_pump_monitoring_system/
+
 ├── 📄 water_pump_analyzer.py           # 데이터 분석 엔진
+
 ├── 📄 streamlit_dashboard.py           # 시각화 대시보드
 ├── 📄 chatbot_implementation.py        # AI 챗봇
 ├── 📄 run.py                          # 통합 실행 스크립트
