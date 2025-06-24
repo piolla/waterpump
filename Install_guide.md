@@ -1,21 +1,21 @@
 # LLM 기반 워터펌프 AI 챗봇 설치 가이드  
 🗂️ 프로젝트 폴더 구조
-water_pump_monitoring_system/
-... water_pump_analyzer.py           # 데이터 분석 엔진
-... streamlit_dashboard.py           # 시각화 대시보드
-... chatbot_implementation.py        # AI 챗봇
-... run.py                          # 통합 실행 스크립트
-... generate_sample_csv.py           # 샘플 데이터 생성기
-... requirements.txt                 # 패키지 의존성
-... README.md                       # 프로젝트 설명서
-... 📁 water_pump_data/                # 데이터 저장 폴더 (자동 생성)
-........ water_pump_analysis_20241201_143022.json
-........ csv_analysis_20241201_143055.json
-........ chatbot_analysis_20241201_143128.json
-........ sample_data_analysis_20241201_143200.json
-........ sample_water_pump_data.csv
-........ pump_report_20241201_143245.txt
-... 📁 __pycache__/                    # Python 캐시 (자동 생성) 
+- water_pump_monitoring_system/
+- ... water_pump_analyzer.py           # 데이터 분석 엔진
+- ... streamlit_dashboard.py           # 시각화 대시보드
+- ... chatbot_implementation.py        # AI 챗봇
+- ... run.py                          # 통합 실행 스크립트
+- ... generate_sample_csv.py           # 샘플 데이터 생성기
+- ... requirements.txt                 # 패키지 의존성
+- ... README.md                       # 프로젝트 설명서
+- ... 📁 water_pump_data/                # 데이터 저장 폴더 (자동 생성)
+- ........ water_pump_analysis_20241201_143022.json
+- ........ csv_analysis_20241201_143055.json
+- ........ chatbot_analysis_20241201_143128.json
+- ........ sample_data_analysis_20241201_143200.json
+- ........ sample_water_pump_data.csv
+- ........ pump_report_20241201_143245.txt
+- ... 📁 __pycache__/                    # Python 캐시 (자동 생성) 
 
 
 # 설치 및 실행 단계
