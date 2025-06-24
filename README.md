@@ -155,12 +155,14 @@ if batch['alert_level'] == '위험':
 ```
 ```
 📁 시스템 아키텍처
-├── 🔧 water_pump_analyzer.py       # 핵심 분석 엔진
-├── 📊 streamlit_dashboard.py       # 시각화 대시보드
-├── 🤖 chatbot_implementation.py    # 기본 AI 챗봇
-├── 🧠 chatbot_implementation_openai.py # LLM 기반 챗봇
-├── 🎲 generate_sample_csv.py       # 테스트 데이터 생성
-├── 🚀 run.py                      # 통합 실행 관리
-└── 📁 water_pump_data/            # 자동 데이터 관리
+├──  water_pump_analyzer.py       # 핵심 분석 엔진
+├──  streamlit_dashboard.py       # 시각화 대시보드
+├──  chatbot_implementation.py    # 기본 AI 챗봇
+├──  chatbot_implementation_openai.py # LLM 기반 챗봇
+├──  generate_sample_csv.py       # 테스트 데이터 생성
+├──  run.py                      # 통합 실행 관리
+└──  water_pump_data/            # 자동 데이터 관리
 ```
 ![image](https://github.com/user-attachments/assets/8578fb48-192d-4144-978e-3cfc74409afa)
+
+
